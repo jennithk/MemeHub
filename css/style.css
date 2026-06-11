@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f8fafc;
+    color:#111827;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.logo{
+    text-align:center;
+    font-size:3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:35px;
+    font-size:1rem;
+}
+
+#searchInput{
+    width:100%;
+    padding:16px 20px;
+    border:1px solid #e2e8f0;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
+    background:white;
+    transition:all .2s ease;
+    margin-bottom:30px;
+}
+
+#searchInput:focus{
+    border-color:#111827;
+    box-shadow:0 0 0 4px rgba(17,24,39,0.08);
+}
+
+h2{
+    margin-bottom:20px;
+    font-size:1.3rem;
+}
+
+.template-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:18px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:all .25s ease;
+    user-select:none;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card p{
+    padding:14px;
+    font-size:14px;
+    font-weight:600;
+    text-align:center;
+}
+
+.upload-section{
+    text-align:center;
+    margin-top:40px;
+}
+
+button{
+    padding:14px 22px;
+    border:none;
+    border-radius:12px;
+    background:#111827;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .2s ease;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    opacity:.95;
+}
+
+button:active{
+    transform:translateY(0);
+}
+
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+        padding:30px 0;
+    }
+
+    .logo{
+        font-size:2.2rem;
+    }
+
+    .subtitle{
+        font-size:.95rem;
+    }
+
+    .template-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .card img{
+        height:160px;
+    }
+
+    button{
+        width:100%;
+    }
+
+}
